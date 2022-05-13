@@ -111,7 +111,7 @@ hr{
             <a class="nav-link  " href="#">Şehrim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active ">Takımımız</a>
+            <a class="nav-link  ">Takımımız</a>
           </li>
           <li class="nav-item">
             <a class="nav-link ">Özgeçmiş</a>
@@ -120,7 +120,7 @@ hr{
             <a class="nav-link ">İlgi alanlarım</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">İletişim</a>
+            <a class="nav-link active">İletişim</a>
           </li>
      
          
@@ -139,26 +139,26 @@ hr{
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form class="row g-3">
+            <form class="row g-3" onsubmit="return validateForm()" name="MyForm">
                 <div class="col-md-6">
                   <label for="inputEmail4" class="form-label">E-posta</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <input type="text" class="form-control" id="inputEmail4" name="eposta">
                 </div>
                 <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Ad Soyad</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <input type="text" class="form-control" id="inputPassword4"name="adsoyad">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress" class="form-label">Adres</label>
-                  <input type="text" class="form-control" id="inputAddress">
+                  <input type="text" class="form-control" id="inputAddress"name="adres">
                 </div>
                 <div class="col-12">
                     <label for="mesaj" class="form-label">Mesajınız</label>
-                    <textarea rows="4" class="form-control" id="message"></textarea>
+                    <textarea rows="4" class="form-control" id="message" name="mesaj"></textarea>
                 </div>
                 <div class="col-12">
                     <select name="sehir" id="sehirler" class="form-select">
-                        <option selected value="belirtilmemis">Konu Seçiniz</option>
+                        <option value="belirtilmemis">Konu Seçiniz</option>
                         <option value="teknik">Teknik</option>
                         <option value="oneri">Öneri</option>
                         <option value="istek">İstek</option>
@@ -174,14 +174,14 @@ hr{
                       </div>
                 </div>
                 <div class="col-6">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input name="cinsiyet" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="erkek">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Erkek
                     </label>
                   </div>
                   
                   <div class="col-12">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                    <input value="kadın" name="cinsiyet"class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
                     <label class="form-check-label" for="flexRadioDefault2">
                       Kadın
                     </label>
@@ -191,11 +191,13 @@ hr{
                 
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary">Gönder</button>
+                  <button type="reset"  class="btn btn-danger">SİL</button>
                 </div>
               </form>
         </div>
     </div>
 </div>
+
 
    
     
