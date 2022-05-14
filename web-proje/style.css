@@ -1,0 +1,55 @@
+
+
+
+
+
+.navbar-collapse .nav-item .nav-link.active {
+color: green;
+}
+
+.tab-content {
+border: 1px solid #dee2e6;
+border-top: transparent;
+padding: 15px;
+}
+
+.tab-content .tab-pane {
+background-color: #FFF;
+color: #0080FF;
+min-height: 200px;
+height: auto;
+}
+body{
+background-color: white;
+}   
+.footer{
+background:white;
+
+
+
+width: 100%;
+
+
+
+}
+
+
+.nav-item{
+font-size: 1.2rem; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

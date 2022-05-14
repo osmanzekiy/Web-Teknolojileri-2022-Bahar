@@ -8,92 +8,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Websitem</title>
-    <style>
-        .aa{
-            margin-top: 50px;
-        }
-       .nav-link{
-         color: red;
-       }
-       a:active{
-         
-        color: green;
-       }
-      .nav-link:hover{
-        color: green;
-        
-      }
-      .nav-link.active{
-        color: green;
-      }
-
-      .nav- .nav-item .nav-link {
-  background-color: #0080FF;
-  color: #FFF;
-}
-
-.navbar-collapse .nav-item .nav-link.active {
-  color: green;
-}
-
-.tab-content {
-  border: 1px solid #dee2e6;
-  border-top: transparent;
-  padding: 15px;
-}
-
-.tab-content .tab-pane {
-  background-color: #FFF;
-  color: #0080FF;
-  min-height: 200px;
-  height: auto;
-}
-body{
-  background-color: white;
-}   
-.footer{
-  background:white;
-  position: fixed;
-  bottom: 0;
-  
-  
-  width: 100%;
-  
- 
-  
-}
-
-
-.nav-item{
-  font-size: 1.2rem; 
-
-}
-.arkaplan{
-  background-image: url("banner.jpg");
-}
-.a{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  
-}
- .main  li{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
- 
-
-
-
-
- 
-        
-
-      
-        
-       
-        
-   
-    </style>
+<link rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -106,34 +21,36 @@ body{
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#">Hakkımda</a>
+            <a class="nav-link  "href="hakkimda.html">Hakkımda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  " href="#">Şehrim</a>
+            <a class="nav-link  " href="sehrim.html">Şehrim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">Takımımız</a>
+            <a class="nav-link " href="takimimiz.html">Takımımız</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">Özgeçmiş</a>
+            <a class="nav-link active">Özgeçmiş</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">İlgi alanlarım</a>
+            <a class="nav-link " href="ilgialanlarim.html">İlgi alanlarım</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">İletişim</a>
+            <a class="nav-link " href="iletisim.html">İletişim</a>
           </li>
      
          
         </ul>
-        <form class="d-flex">
+        
          
           
-          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a style="text-decoration:none; color:green;" href="login.html"><button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Giriş Yap
-          </button>
           
-        </form>
+          </button>
+        </a>
+          
+        
       </div>
     </div>
   </nav>
@@ -202,7 +119,7 @@ body{
 
      
        
-       <footer class="footer bg-dark py-4">
+       <footer class="footer bg-dark py-4" style="position:fixed ; bottom:0;">
         <div class="container text-white" style="text-align: center;">
           <div class="row">
             

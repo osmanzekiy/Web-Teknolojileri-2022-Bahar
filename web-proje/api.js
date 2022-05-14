@@ -12,9 +12,10 @@ function getApi(){
         let output="<ul>";
      for(let coin of result.data){
          output+=`<li>Coin Adı: ${coin.name}</li>`;
-         output+=`<li>Coin Değeri ${coin.price_usd}</li>`;
+         output+=`<li>Coin Değeri: ${coin.price_usd}</li><br>`;
          //document.getElementById("output").innerHTML+=coin.price_usd;
      }
+     output+="</ul>"
        document.getElementById("output").innerHTML=output;
     }
     
